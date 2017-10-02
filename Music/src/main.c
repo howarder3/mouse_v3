@@ -574,91 +574,103 @@ void SysTick_Handler(void){
 			}
 			else if(current_score < 10)
 			{
-				answer_time = 800;
+				answer_time = 900;
 				sleep_time = 1000;
 				current_music = RE;
 			}
-			else if(current_score < 20)
+			else if(current_score < 15)
 			{
-				answer_time = 700;
+				answer_time = 800;
 				sleep_time = 800;
 				current_music = MI;
 			}
-			else if(current_score < 30)
+			else if(current_score < 20)
 			{
-				answer_time = 600;
+				answer_time = 750;
 				sleep_time = 500;
 				current_music = FA;
 			}
-			else if(current_score < 40)
+			else if(current_score < 30)
 			{
-				answer_time = 550;
+				answer_time = 700;
 				sleep_time = 300;
 				current_music = SO;
 			}
-			else if(current_score < 50)
+			else if(current_score < 40)
 			{
-				answer_time = 500;
+				answer_time = 650;
 				sleep_time = 300;
 				current_music = LA;
 			}
-			else if(current_score < 60)
+			else if(current_score < 50)
 			{
-				answer_time = 450;
+				answer_time = 600;
 				sleep_time = 300;
 				current_music = SI;
 			}
-			else if(current_score < 70)
+			else if(current_score < 60)
 			{
-				answer_time = 400;
+				answer_time = 550;
 				sleep_time = 300;
 				current_music = H_DO;
 			}
-			else if(current_score < 80)
+			else if(current_score < 70)
 			{
-				answer_time = 350;
+				answer_time = 500;
 				sleep_time = 300;
 				current_music = H_RE;
 			}
-			else if(current_score < 90)
+			else if(current_score < 80)
 			{
-				answer_time = 300;
+				answer_time = 450;
 				sleep_time = 300;
 				current_music = H_MI;
 			}
-			else if(current_score < 100)
+			else if(current_score < 90)
 			{
-				answer_time = 300;
+				answer_time = 400;
 				sleep_time = 200;
 				current_music = H_FA;
+			}
+			else if(current_score < 100)
+			{
+				answer_time = 350;
+				sleep_time = 200;
+				current_music = H_SO;
 			}
 			else
 			{
 				answer_time = 300;
 				sleep_time = 100;
 				if(current_score < 110)
-					current_music = H_SO;
-				else if(current_score < 120)
 					current_music = H_LA;
-				else if(current_score < 130)
+				else if(current_score < 120)
 					current_music = H_SI;
-				else if(current_score < 140)
+				else if(current_score < 130)
 					current_music = HH_DO;
+				else if(current_score < 140)
+					current_music = HH_RE;
 				else if(current_score < 150)
-					current_music = HH_LA;
+					current_music = HH_MI;
 				else if(current_score < 160)
-					current_music = HH_SI;
+					current_music = HH_FA;
 				else if(current_score < 170)
-					current_music = HHH_DO;
+					current_music = HH_SO;
 				else if(current_score < 180)
-					current_music = HHH_RE;
+					current_music = HH_LA;
 				else if(current_score < 190)
-					current_music = HHH_MI;
+					current_music = HH_SI;
 				else if(current_score < 200)
-					current_music = HHH_FA;
+					current_music = HHH_DO;
 				else if(current_score < 210)
-					current_music = HHH_SO;
+					current_music = HHH_RE;
 				else if(current_score < 220)
+					current_music = HHH_MI;
+				else if(current_score < 230)
+					current_music = HHH_FA;
+				else if(current_score < 240)
+					current_music = HHH_SO;
+				else if(current_score < 250)
 					current_music = HHH_LA;
 				else
 					current_music = HHH_SI;
